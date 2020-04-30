@@ -1,8 +1,11 @@
 import React, { useContext } from "react";
 import { GithubContext } from "../../context/github/GithubContext";
+import Spinner from "./Spinner";
 
 function Search() {
-  const { searchData, setSearchData,searchUsers } = useContext(GithubContext);
+  const { searchData, setSearchData, searchUsers, spining } = useContext(
+    GithubContext
+  );
 
   function searchUser(e) {
     setSearchData(e.target.value);
@@ -30,15 +33,15 @@ function Search() {
               className=" inline-block bg-green-500 rounded-r hover:bg-green-700 text-sm text-white"
               type="submit"
               style={{
-                paddingTop: "8px",
-                paddingBottom: "8px",
-                paddingLeft: "12px",
-                paddingRight: "12px",
+                paddingBottom:'3px',
+                paddingTop:"7px",
+                paddingLeft: "9px",
+                paddingRight: "9px",
               }}
             >
-              <i className="fas fa-search"></i>
+              {spining ? <Spinner /> : <i style={{height: "22px", width: "21px"}} className="fas fa-search"></i>}
+              
             </button>
-            
           </div>
         </div>
       </form>
