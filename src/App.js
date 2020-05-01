@@ -5,6 +5,7 @@ import Users from "./components/users/Users";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import GithubContextProvider from "./context/github/GithubContext";
 import UserPage from "./components/users/UserPage";
+import About from "./components/pages/About";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
             </div>
             <Switch>
               <Route exact path="/about">
-                <h1>About</h1>
+                <About />
               </Route>
               <Route
                 exact
