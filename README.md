@@ -24,6 +24,27 @@ Important libraries
 
 <img title="Logo Title Text 1" src="screenshots\ss2-min.png" alt="alt text" width="377" data-align="center">
 
+# **How To INSTALL**
+
+create an ```env.local``` 📃file in 🌳root 📁dir
+
+and 📜paste the 👇code in there.
+
+```js
+REACT_APP_GITHUB_CLIENT_ID = 'your key'
+REACT_APP_GITHUB_CLIENT_SECRET = 'your key'
+```
+
+<u>you can find the key in the github dev page ( happy finding XD )</u>
+
+
+
+then run the command in root dir  ```npm install or npm i ```
+
+after finish ```npm run start```
+
+**enjoy the app 😊**
+
 ## Available Scripts
 
 ### `npm start`
