@@ -34,7 +34,6 @@ export default withRouter(function GithubContextProvider(props) {
     );
     setSingleUserData(res.data);
     setLoading(false);
-    console.log(loading)
   };
   return (
     <GithubContext.Provider
@@ -46,7 +45,8 @@ export default withRouter(function GithubContextProvider(props) {
         singleUserData,
         setSingleUserData,
         userData,
-        spining
+        spining,
+        loading
       }}
     >
       {props.children}
