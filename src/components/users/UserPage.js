@@ -23,17 +23,18 @@ function UserPage(props) {
   } = singleUserData;
   return (
     <>
-      <div className="pt-6 flex">
-        <div className="flex-1">
+      <div className="pt-6 flex-none md:flex">
+        <div className="flex-none md:flex-1">
           <div className="flex justify-center">
-            <div style={{ height: "400px", width: "400px" }}>
+            <div className='p-5 md:p-0'>
               {loading ? (
-                <Skeleton height={350} />
+                <Skeleton height={350} width={350} />
               ) : (
                 <img
                   src={avatar_url}
                   alt=""
                   className="w-full rounded overflow-hidden shadow-lg"
+                  style={{height:'350px',width:'350px'}}
                 />
               )}
 
@@ -47,8 +48,8 @@ function UserPage(props) {
             </div>
           </div>
         </div>
-        <div className="flex-1 px-3">
-          <div className="pb-5 flex text-center">
+        <div className="flex-none md:flex-1 px-3">
+          <div className="pb-5 flex justify-center md:justify-start text-center">
             {loading ? (
               <div className='pl-3 inline-block'><Skeleton height={25} width={100} /></div>
             ) : (
