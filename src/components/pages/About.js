@@ -17,7 +17,7 @@ const About = () => {
               href="http://www.facebook.com/antufa"
               target="_blank"
             >
-              <i class="fab fa-facebook-f"></i>
+              <i className="fab fa-facebook-f"></i>
             </a>
             <a
               className="p-3 bg-gray-600"
@@ -25,7 +25,7 @@ const About = () => {
               href="https://twitter.com/fa_antu"
               target="_blank"
             >
-              <i class="fab fa-twitter"></i>
+              <i className="fab fa-twitter"></i>
             </a>
             <a
               className="p-3 bg-gray-600"
@@ -33,7 +33,7 @@ const About = () => {
               href="http://github.com/faisalantu"
               target="_blank"
             >
-              <i class="fab fa-github"></i>
+              <i className="fab fa-github"></i>
             </a>
           </div>
         </div>
