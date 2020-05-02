@@ -10,11 +10,6 @@ const About = () => {
           <p className="text-sm">Version: 1.0.0</p>
         </div>
         <div className="flex-2 bg-gray-400">
-          {/*             <ul className='flex flex-col justify-between'>
-                <li className='p-3 bg-gray-600'> <a href="facebook.com/antufa p-3 bg-gray-600'"> <i class="fab fa-facebook-f"></i></a></li>
-                <li className='p-3 bg-gray-500'> <a href="facebook.com/antufa"> <i class="fab fa-twitter"></i></a></li>
-                <li className='p-3 bg-gray-400'> <a href="facebook.com/antufa"> <i class="fab fa-github"></i></a></li>
-            </ul> */}
           <div className="flex flex-col justify-between">
             <a
               className="p-3 bg-gray-600"
