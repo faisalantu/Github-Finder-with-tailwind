@@ -6,7 +6,7 @@ const About = () => {
       <div className="flex text-gray-700 border-l-8 border-red-500 border-solid subpixel-antialiased shadow rounded overflow-hidden mt-6">
         <div className="flex-1 p-6">
           <p className=" text-lg font-bold">Search GitHub users</p>
-          <h1 className="text-lg font-semibold">Author: Faisal Ahmed (Antu)</h1>
+          <h1 className="text-lg font-semibold">DEV: Faisal Ahmed (Antu)</h1>
           <p className="text-sm">Version: 1.0.0</p>
         </div>
         <div className="flex-2 bg-gray-400">
