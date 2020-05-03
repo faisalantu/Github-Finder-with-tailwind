@@ -1,6 +1,5 @@
 # **Github user search**
 
-***
 
 Search Github users and view details about their information was the main purpose.
 
@@ -16,7 +15,6 @@ Important libraries
 
 - 🦴[react-loading-skleton](https://www.npmjs.com/package/react-loading-skeleton)
 
----
 
 # **Screenshots**
 
