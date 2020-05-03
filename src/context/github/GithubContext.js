@@ -6,7 +6,7 @@ export const GithubContext = createContext();
 let githubClientId;
 let githubClientSecret;
 
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== "production") {
   githubClientId = process.env.REACT_APP_GITHUB_CLIENT_ID;
   githubClientSecret = process.env.REACT_APP_GITHUB_CLIENT_SECRET;
 } else {
@@ -26,7 +26,7 @@ export default withRouter(function GithubContextProvider(props) {
   const [singleUserData, setSingleUserData] = useState([]);
   const [spining, setSpining] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [path, setPath] = useState('');
+  const [path, setPath] = useState("");
 
   // Search Users
   const searchUsers = async (text) => {
@@ -59,7 +59,8 @@ export default withRouter(function GithubContextProvider(props) {
         userData,
         spining,
         loading,
-        path,setPath
+        path,
+        setPath,
       }}
     >
       {props.children}

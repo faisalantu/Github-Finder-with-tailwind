@@ -33,14 +33,20 @@ function Search() {
               className=" inline-block shadow bg-green-500 rounded-r hover:bg-green-700 text-sm text-white focus:outline-none"
               type="submit"
               style={{
-                paddingBottom:'3px',
-                paddingTop:"7px",
+                paddingBottom: "3px",
+                paddingTop: "7px",
                 paddingLeft: "9px",
                 paddingRight: "9px",
               }}
             >
-              {spining ? <Spinner /> : <i style={{height: "22px", width: "21px"}} className="fas fa-search"></i>}
-              
+              {spining ? (
+                <Spinner />
+              ) : (
+                <i
+                  style={{ height: "22px", width: "21px" }}
+                  className="fas fa-search"
+                ></i>
+              )}
             </button>
           </div>
         </div>

@@ -26,7 +26,7 @@ function UserPage(props) {
       <div className="pt-6 flex-none md:flex">
         <div className="flex-none md:flex-1">
           <div className="flex justify-center">
-            <div className='p-5 md:p-0'>
+            <div className="p-5 md:p-0">
               {loading ? (
                 <Skeleton height={350} width={350} />
               ) : (
@@ -34,7 +34,7 @@ function UserPage(props) {
                   src={avatar_url}
                   alt=""
                   className="w-full rounded overflow-hidden shadow-lg"
-                  style={{height:'350px',width:'350px'}}
+                  style={{ height: "350px", width: "350px" }}
                 />
               )}
 
@@ -51,7 +51,9 @@ function UserPage(props) {
         <div className="flex-none md:flex-1 px-3">
           <div className="pb-5 flex justify-center md:justify-start text-center">
             {loading ? (
-              <div className='pl-3 inline-block'><Skeleton height={25} width={100} /></div>
+              <div className="pl-3 inline-block">
+                <Skeleton height={25} width={100} />
+              </div>
             ) : (
               <span className="flex-initial inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
                 Hireable:{" "}
@@ -63,14 +65,18 @@ function UserPage(props) {
               </span>
             )}
             {loading ? (
-              <div className='pl-3 inline-block'><Skeleton height={25} width={100} /></div>
+              <div className="pl-3 inline-block">
+                <Skeleton height={25} width={100} />
+              </div>
             ) : (
               <span className="flex-initial inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
                 Following: {following}
               </span>
             )}
             {loading ? (
-              <div className='pl-3 inline-block'><Skeleton height={25} width={100} /></div>
+              <div className="pl-3 inline-block">
+                <Skeleton height={25} width={100} />
+              </div>
             ) : (
               <span className="flex-initial inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
                 Followers: {followers}
@@ -78,7 +84,9 @@ function UserPage(props) {
             )}
           </div>
           {loading ? (
-            <div className='my-4 px-3 d-block'><Skeleton height={70} count={4} /></div>
+            <div className="my-4 px-3 d-block">
+              <Skeleton height={70} count={4} />
+            </div>
           ) : (
             <div className="my-4 border px-3 rounded ">
               <h1 className="py-4 text-gray-700 pl-2 text-lg font-semibold">
@@ -94,7 +102,8 @@ function UserPage(props) {
                 <i className="fas fa-rss-square"></i> Blog: {blog}
               </h1>
               <h1 className="py-4 text-gray-700 pl-2 border-t text-lg font-semibold">
-                <i className="fas fa-calendar-day"></i> Joined GitHub: {created_at}
+                <i className="fas fa-calendar-day"></i> Joined GitHub:{" "}
+                {created_at}
               </h1>
             </div>
           )}

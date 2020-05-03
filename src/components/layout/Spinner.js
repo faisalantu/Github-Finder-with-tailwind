@@ -2,7 +2,10 @@ import React from "react";
 
 const Spinner = () => {
   return (
-    <div style={{ height: "21px", width: "21px" }} className="sbl-circ-path"></div>
+    <div
+      style={{ height: "21px", width: "21px" }}
+      className="sbl-circ-path"
+    ></div>
   );
 };
 
