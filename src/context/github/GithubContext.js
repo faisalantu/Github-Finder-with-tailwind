@@ -26,6 +26,7 @@ export default withRouter(function GithubContextProvider(props) {
   const [singleUserData, setSingleUserData] = useState([]);
   const [spining, setSpining] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [path, setPath] = useState('');
 
   // Search Users
   const searchUsers = async (text) => {
@@ -57,7 +58,8 @@ export default withRouter(function GithubContextProvider(props) {
         setSingleUserData,
         userData,
         spining,
-        loading
+        loading,
+        path,setPath
       }}
     >
       {props.children}
