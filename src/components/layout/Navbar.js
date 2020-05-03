@@ -18,13 +18,13 @@ const Navbar = (props) => {
         <div className="text-md my-3 md:my-0 pr-5 md:pr-0 font-medium text-white">
           <Link
             to="/"
-            className="inline-block my-1 md:my-0 lg:mt-0 hover:text-green-300 mx-1 "
+            className="inline-block pl-2 my-1 md:my-0 lg:mt-0 hover:text-green-300 mx-1 "
           >
             Home
           </Link>
           <Link
             to="/about"
-            className="inline-block my-1 md:my-0 lg:mt-0 hover:text-green-300 mx-1"
+            className="inline-block pl-2 my-1 md:my-0 lg:mt-0 hover:text-green-300 mx-1"
           >
             About
           </Link>
