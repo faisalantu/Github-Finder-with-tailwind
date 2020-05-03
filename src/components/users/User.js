@@ -7,7 +7,7 @@ function User(props) {
     <div className="max-w-sm rounded overflow-hidden shadow-lg">
       <img src={props.user.avatar_url} alt="" className="w-full" />
       <div className="px-6 py-4 text-center">
-        <div className="font-bold text-purple-500 text-xl mb-2">
+        <div className="font-bold text-blue-700 text-xl mb-2">
           {props.user.login}
         </div>
         <div>
